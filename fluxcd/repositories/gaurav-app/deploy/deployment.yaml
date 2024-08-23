@@ -1,14 +1,14 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: vilas-app-1
+  name: gaurav-app
   labels:
-    app: vilas-app-1
+    app: gaurav-app
   namespace: default
 spec:
   selector:
     matchLabels:
-      app: vilas-app-1
+      app: gaurav-app
   replicas: 2
   strategy:
     type: RollingUpdate
@@ -18,10 +18,10 @@ spec:
   template:
     metadata:
       labels:
-        app: vilas-app-1
+        app: gaurav-app
     spec:
       containers:
-      - name: vilas-app-1
+      - name: gaurav-app
         image: vilas-app-1:0.0.1
         ports:
         - containerPort: 5000
@@ -31,4 +31,4 @@ spec:
       volumes:
       - name: config-volume
         configMap:
-          name: vilas-app-1
+          name: gaurav-app
