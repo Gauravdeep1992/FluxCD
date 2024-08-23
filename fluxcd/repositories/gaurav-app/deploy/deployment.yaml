@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: gaurav-app
-        image: vilas-app-1:0.0.1
+        image: gaurav-app:0.0.1
         ports:
         - containerPort: 5000
         volumeMounts:
