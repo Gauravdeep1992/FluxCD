@@ -7,4 +7,4 @@ spec:
   interval: 1m0s
   ref:
     branch: main
-  url: https://github.com/gargikundu/flux-cd
+  url: https://github.com/Gauravdeep1992/FluxCD
